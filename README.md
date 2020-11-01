@@ -6,3 +6,6 @@
   - 好きなメソッド: where
 - 名前: Tatty
   - 好きなメソッド: pluck
+- 名前：yukihiko
+  _ 好きなメソッド: to_s
+
