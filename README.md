@@ -10,5 +10,7 @@
 　- 好きなメソッド: where
 - 名前：yukihiko
   _ 好きなメソッド: to_s
+- 名前：yuu_tanaka
+  _ 好きなメソッド: each
 
 
