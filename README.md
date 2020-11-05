@@ -18,4 +18,5 @@
   - 好きなメソッド: where
 - 名前：yukihiko
   - 好きなメソッド: to_s
-
+- 名前：yama_ryoji
+  - 好きなメソッド: present
