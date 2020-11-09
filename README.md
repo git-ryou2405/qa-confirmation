@@ -31,7 +31,6 @@ docker-compose up
 docker-compose ps
 ```
 ### railsコマンドを実行する
-例えば、docker環境下で`rails db:migrate`を実行する場合は以下のコマンドを使う
 ##### docker-composeで起動しているコンテナに入る
 コンテナに入った後、railsコマンドが実行できる
 ```
@@ -77,49 +76,14 @@ docker-compose logs
 docker-compose rm
 ```
 ### Dockerのイメージ、コンテナ、ネットワーク、ボリューム一括削除
-- 未使用なイメージ、コンテナ、ネットワークを一括削除
-```
-docker system prune -a
-```
 - 未使用なイメージ、コンテナ、ネットワークを一括削除（volumeも含め全て削除）
 ```
 docker system prune -a --volumes
 ```
-- 停止中のコンテナ一括削除
+### Dockerコンテナ一覧表示
 ```
-docker container prune
-```
-- 未使用のイメージ一括削除
-```
-docker image prune
-```
-- 未使用のボリューム一括削除
-```
-docker volume prune
-```
-- 未使用のネットワーク一括削除
-```
-docker network prune
-```
-※デフォルトで作成されている bridge、host、noneは消えずに残る。
-### Dockerのイメージ、コンテナ、ネットワーク、ボリューム一覧表示
-- コンテナ一覧表示
-```
-docker ps -a
+docker ps
 
 docker-compose ps
 ```
-- イメージ一覧表示
-```
-docker images
-
-docker images -a     #タグ付けしてないimage含め全て
-```
-- ボリューム一覧表示
-```
-docker volume ls
-```
-- ネットワーク一覧表示
-```
-docker network ls
-```
+※-aオプションをつけると終了したコンテナも表示される
